@@ -33,10 +33,10 @@ h2{font-size:clamp(2.4rem,6vw,5rem);font-weight:800;letter-spacing:-.03em;margin
 #ld{position:fixed;inset:0;z-index:400;background:#000;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;transition:transform 1s .2s var(--ease)}
 #ld.done{transform:translateY(-100%)}#ld b{font:800 clamp(5rem,16vw,12rem)/1 Syne;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}#ld span{color:var(--mut)}
 /* nav + menu */
-nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:18px 0}
+nav{position:absolute;top:0;left:0;right:0;z-index:100;padding:18px 0}
 .nv{display:flex;justify-content:space-between;align-items:center}
 .logo{display:flex;align-items:center;gap:12px;font:800 1.05rem/1 Syne}
-.mark{width:36px;height:44px;overflow:hidden;border-radius:10px;background:#fff;flex:none}.mark img{width:197px;max-width:none;margin:-22px 0 0 -41px}
+.mark{height:44px;border-radius:10px;flex:none}.mark img{width:160px;max-width:none;margin:-5px 0 0 -41px}
 .nr{display:flex;gap:10px;align-items:center}
 .pillb{display:inline-flex;align-items:center;gap:10px;padding:12px 22px;border-radius:99px;font-weight:600;font-size:.92rem;border:1px solid var(--line);background:#ffffff0d;backdrop-filter:blur(14px);transition:.4s var(--ease)}
 .pillb:hover{background:#fff;color:#000}
@@ -175,7 +175,7 @@ nav{transition:color .4s}nav.onl{color:#0d0d12}nav.onl .pillb{border-color:#0d0d
 <div id="cd"></div><div id="cr"><i></i></div><div id="sp"></div>
 <div id="ld"><b id="lc">0</b><span>Design Google</span></div>
 
-<nav><div class="wrap nv"><a href="#" class="logo"><span class="mark"><img src="dg.png" alt="Design Google"></span>Design Google</a>
+<nav><div class="wrap nv"><a href="#" class="logo"><span class="mark"><img src="dgwhite.png" alt="Design Google"></span></a>
 <div class="nr"><a href="#contact" class="pillb">Let's talk <i class="fa-solid fa-arrow-right"></i></a><button class="pillb" id="mb" aria-label="Open menu"><span id="mt">Menu</span> <i class="fa-solid fa-bars-staggered"></i></button></div></div></nav>
 <div class="mo" id="mo"><div><a href="#services" style="--i:0">Services</a><a href="#work" style="--i:1">Work</a><a href="#process" style="--i:2">Process</a><a href="#why" style="--i:3">Why us</a><a href="#contact" style="--i:4">Contact</a></div></div>
 
@@ -207,9 +207,9 @@ nav{transition:color .4s}nav.onl{color:#0d0d12}nav.onl .pillb{border-color:#0d0d
 <section id="why" class="lt"><div class="wrap">
   <div class="rv"><span class="lbl">Why Design Google</span><h2>Built different,<br><span class="gt">on purpose.</span></h2></div>
   <div class="bento">
-    <div class="t cmpt rv" id="cmp"><img src="https://picsum.photos/seed/dg-ba/1200/1000" alt="After"><img class="bf" src="https://picsum.photos/seed/dg-ba/1200/1000" alt="Before"><div class="hd"></div><em style="left:20px">Before</em><em style="right:20px">After</em></div>
+    <div class="t cmpt rv" id="cmp"><img src="balkan.jpg" alt="After"><img class="bf" src="https://picsum.photos/seed/dg-ba/1200/1000" alt="Before"><div class="hd"></div><em style="left:20px">Before</em><em style="right:20px">After</em></div>
     <div class="t ringt rv"><svg viewBox="0 0 120 120"><defs><linearGradient id="gr"><stop offset="0" stop-color="#4285F4"/><stop offset="1" stop-color="#34A853"/></linearGradient></defs><circle class="c1" cx="60" cy="60" r="52"/><circle class="c2" cx="60" cy="60" r="52"/></svg><h4>Brands launched</h4><small>and counting</small><div class="num"><span data-n="250">0</span>+</div></div>
-    <div class="t rv"><h4>Studio status</h4><small>Karachi, Pakistan</small><div class="num" style="font-size:2.2rem"><span class="dot" style="display:inline-block;margin-right:10px"></span><span id="st">Open</span></div><small style="position:absolute;bottom:14px" id="tm"></small></div>
+    <div class="t rv"><h4>Studio status</h4><small style="display: none;">Karachi, Pakistan</small><div class="num" style="font-size:2.2rem"><span class="dot" style="display:inline-block;margin-right:10px"></span><span id="st">Open</span></div><small style="position:absolute;bottom:14px" id="tm"></small></div>
     <div class="t tools rv"><div><span>Figma</span><span>After Effects</span><span>Blender</span><span>React</span><span>WordPress</span><span>Premiere</span><span>Figma</span><span>After Effects</span><span>Blender</span><span>React</span><span>WordPress</span><span>Premiere</span></div><div><span>Illustrator</span><span>Next.js</span><span>Shopify</span><span>Ahrefs</span><span>Webflow</span><span>Cinema 4D</span><span>Illustrator</span><span>Next.js</span><span>Shopify</span><span>Ahrefs</span><span>Webflow</span><span>Cinema 4D</span></div></div>
     <div class="t str rv" style="--c:var(--y)"><h4>Rated 4.9 out of 5</h4><small>by 120+ clients</small><div style="position:absolute;bottom:24px"><i class="fa-solid fa-star" style="--k:0"></i><i class="fa-solid fa-star" style="--k:1"></i><i class="fa-solid fa-star" style="--k:2"></i><i class="fa-solid fa-star" style="--k:3"></i><i class="fa-solid fa-star" style="--k:4"></i></div></div>
     <a href="#contact" class="t ctat rv"><h4>Have a project in mind?</h4><span class="ar"><i class="fa-solid fa-arrow-right"></i></span></a>
@@ -247,21 +247,21 @@ const mo=$('#mo');$('#mb').onclick=()=>{const o=mo.classList.toggle('open');$('#
 const W=['Graphic design','Web development','Video editing','SEO','Social media','2D animation','3D animation','Digital marketing'];
 $('#mq').innerHTML=[...W,...W].map(w=>`<span>${w} ✦</span>`).join('');
 // services
-const SV=[['Graphic design','Identity · Packaging · Print','Logos, visual systems and print that make your brand unmistakable.',['Logo','Brand guide','Packaging'],'dg-s1'],
-['Web design and development','UI/UX · Custom builds · E-commerce','Fast, responsive websites and stores designed to convert.',['UI/UX','Development','Shopify'],'dg-s2'],
-['Video editing','Reels · Ads · Color grading','Sharp edits for ads, reels, YouTube and brand films.',['Reels','Ads','Sound design'],'dg-s3'],
-['Digital marketing','Google ads · Meta ads · Funnels','Performance campaigns tied to revenue, not vanity metrics.',['Paid ads','Funnels','Email'],'dg-s4'],
-['Social media marketing','Content · Community · Creators','Content calendars and creators that grow a loyal audience.',['Content','Community','Influencers'],'dg-s5'],
-['SEO','Technical · On-page · Links','Rank higher on Google and keep the traffic that comes with it.',['Technical SEO','Content','Reports'],'dg-s6'],
-['2D animation','Explainers · Motion graphics','Explainers and motion that simplify your message.',['Explainers','Characters','Logo motion'],'dg-s7'],
-['3D animation','Renders · Walkthroughs · VFX','Product renders and cinematic scenes that bring ideas to life.',['Product renders','Walkthroughs','VFX'],'dg-s8']];
+const SV=[['Graphic design','Identity · Packaging · Print','Logos, visual systems and print that make your brand unmistakable.',['Logo','Brand guide','Packaging'],'cardpay.jpg'],
+['Web design and development','UI/UX · Custom builds · E-commerce','Fast, responsive websites and stores designed to convert.',['UI/UX','Development','Shopify'],'businessdirectory.jpg'],
+['Video editing','Reels · Ads · Color grading','Sharp edits for ads, reels, YouTube and brand films.',['Reels','Ads','Sound design'],'videoedit.png'],
+['Digital marketing','Google ads · Meta ads · Funnels','Performance campaigns tied to revenue, not vanity metrics.',['Paid ads','Funnels','Email'],'digital.png'],
+['Social media marketing','Content · Community · Creators','Content calendars and creators that grow a loyal audience.',['Content','Community','Influencers'],'smm.png'],
+['SEO','Technical · On-page · Links','Rank higher on Google and keep the traffic that comes with it.',['Technical SEO','Content','Reports'],'seo.jpg'],
+['2D animation','Explainers · Motion graphics','Explainers and motion that simplify your message.',['Explainers','Characters','Logo motion'],'2danimation.jpg'],
+['3D animation','Renders · Walkthroughs · VFX','Product renders and cinematic scenes that bring ideas to life.',['Product renders','Walkthroughs','VFX'],'3danimation.jpg']];
 const sl=$('#sl'),fp=$('#fp');
 sl.innerHTML=SV.map(([n,t,d,g,s],i)=>`<div class="sv rv" data-s="${s}"><div class="svh"><span class="n">0${i+1}</span><h3>${n}</h3><span class="tg">${t}</span><span class="ar"><i class="fa-solid fa-arrow-right"></i></span></div><div class="sb"><div><div class="sbi"><p>${d}</p><div>${g.map(x=>`<span>${x}</span>`).join('')}</div></div></div></div></div>`).join('');
-$$('.sv',sl).forEach(r=>{r.onmouseenter=()=>{$('#fb').src=$('#ff').src=im(r.dataset.s,600,400);fp.classList.add('on')};r.onmouseleave=()=>fp.classList.remove('on');$('.svh',r).onclick=()=>{const o=r.classList.contains('open');$$('.sv',sl).forEach(x=>x.classList.remove('open'));if(!o)r.classList.add('open')}});
+$$('.sv',sl).forEach(r=>{r.onmouseenter=()=>{$('#fb').src=$('#ff').src=r.dataset.s;fp.classList.add('on')};r.onmouseleave=()=>fp.classList.remove('on');$('.svh',r).onclick=()=>{const o=r.classList.contains('open');$$('.sv',sl).forEach(x=>x.classList.remove('open'));if(!o)r.classList.add('open')}});
 // work
-const PJ=[['Nova Coffee identity','Branding','dg-w1','#FBBC04'],['Finlo banking platform','Web','dg-w2','#4285F4'],['Urbanwear campaign film','Video','dg-w3','#EA4335'],['Bloom skincare growth','Marketing','dg-w4','#34A853'],['Orbit fitness rebrand','Branding','dg-w6','#FBBC04']];
+const PJ=[['Balkan Connect','Branding','#FBBC04','balkan.jpg'],['Construction Web','Web','#4285F4','constrc.jpg'],['Basketball Match Video Editing Project','Video','#EA4335','basketball.jpg'],['Social Media Marketing Project','Marketing','#34A853','smm.png'],['Clothing Brand Logo','Branding','#FBBC04','koalas.jpg']];
 const trk=$('#trk');
-trk.innerHTML=`<div class="intro"><span class="lbl">Selected work</span><h2>Proof, not <span class="gt">promises.</span></h2><p>Keep scrolling. The page slides sideways through our recent launches.</p></div>`+PJ.map(([t,c,s,col],i)=>`<div class="hsl" style="--c:${col}"><div class="ph"><img class="bgb" src="${im(s)}" alt=""><img class="fg" src="${im(s)}" alt="${t}" loading="lazy"></div><div class="cp"><b>0${i+1}</b><div><h3>${t}</h3><span>${c}</span></div></div></div>`).join('')+`<div class="end"><h2>Yours <span class="gt">next?</span></h2><p style="color:var(--mut);margin:18px 0 26px">Let's make your project the next one on this wall.</p><a href="#contact" class="btn">Start a project <i class="fa-solid fa-arrow-right"></i></a></div>`;
+trk.innerHTML=`<div class="intro"><span class="lbl">Selected work</span><h2>Proof, not <span class="gt">promises.</span></h2><p>Keep scrolling. The page slides sideways through our recent launches.</p></div>`+PJ.map(([t,c,col,src],i)=>`<div class="hsl" style="--c:${col}"><div class="ph"><img class="bgb" src="${src}" alt=""><img class="fg" src="${src}" alt="${t}" loading="lazy"></div><div class="cp"><b>0${i+1}</b><div><h3>${t}</h3><span>${c}</span></div></div></div>`).join('')+`<div class="end"><h2>Yours <span class="gt">next?</span></h2><p style="color:var(--mut);margin:18px 0 26px">Let's make your project the next one on this wall.</p><a href="#contact" class="btn">Start a project <i class="fa-solid fa-arrow-right"></i></a></div>`;
 // process
 const PR=[['Discover','#4285F4','compass','We learn your business, audience and goals before touching a pixel.',['Kick-off call','Research','Quote']],['Design','#EA4335','pen-nib','Concepts, prototypes and storyboards you can react to early.',['Moodboards','Prototypes','2 feedback rounds']],['Build','#FBBC04','code','We develop, animate and produce, with a progress demo every week.',['Development','Animation','Weekly demos']],['Launch and grow','#34A853','rocket','We go live, set up tracking and keep improving results every month.',['QA and launch','SEO setup','Growth reports']]];
 $('#stk').innerHTML=PR.map(([t,c,i,d,l],x)=>`<div class="stk" style="--i:${x};--c:${c}"><div class="bn">0${x+1}</div><div><h3>${t}</h3><p>${d}</p>${l.map(a=>`<span>${a}</span>`).join('')}</div><div class="ri"><i class="fa-solid fa-${i}"></i></div></div>`).join('');
@@ -276,7 +276,7 @@ const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return
 $$('.rv').forEach((el,i)=>{el.style.transitionDelay=(i%4)*70+'ms';io.observe(el)});
 // live studio clock
 function clock(){const d=new Date(),o={timeZone:'Asia/Karachi'},h=+new Intl.DateTimeFormat('en-US',{...o,hour:'numeric',hour12:false}).format(d)%24,day=new Intl.DateTimeFormat('en-US',{...o,weekday:'short'}).format(d),open=h>=10&&h<19&&day!=='Sun';
- $('#tm').textContent=new Intl.DateTimeFormat('en-US',{...o,hour:'2-digit',minute:'2-digit'}).format(d)+' local time';$('#st').textContent=open?'Open now':'Back tomorrow';$('#clk').textContent=(open?'Studio open':'Studio closed')+' · Karachi '+new Intl.DateTimeFormat('en-US',{...o,hour:'2-digit',minute:'2-digit'}).format(d)}
+ $('#tm').textContent=new Intl.DateTimeFormat('en-US',{...o,hour:'2-digit',minute:'2-digit'}).format(d)+' local time';$('#st').textContent=open?'Open now':'Back tomorrow';$('#clk').textContent=(open?'Studio open':'Studio closed')+' · '+new Intl.DateTimeFormat('en-US',{...o,hour:'2-digit',minute:'2-digit'}).format(d)}
 clock();setInterval(clock,30000);
 // testimonials
 const TT=[['Daniel Carter','CEO, Finlo','12','They rebuilt our website and our traffic doubled in four months. It felt like having an in-house team that actually cares.'],['Sara Malik','Founder, Nova Coffee','47','Our rebrand finally looks like the company we are. Customers mention the new identity almost every single day.'],['Omar Farooq','Marketing Lead, Urbanwear','33','The campaign film beat every ad we had ever run. Fast turnaround, zero stress, and a result we are proud of.'],['Emily Brooks','Director, Bloom Skincare','45','SEO and ads together took us from page three to the top spot. Sales are up three times on last year.']];
